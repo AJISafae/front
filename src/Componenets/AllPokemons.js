@@ -15,13 +15,13 @@ export default class AllPokemons extends Component {
   }
   async componentDidMount() {
     try {
-      const response = await fetch('http://localhost:3000/pokemons');
+      const response = await fetch('https://projetpoca-production.up.railway.app');
       const json = await response.json();
       this.setState({
         pokemons: json,
         loading: false
       }, () => {
-        console.log(json);
+        console.log(json);http://localhost:3000
 
       })
     } catch (error) {

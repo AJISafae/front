@@ -15,7 +15,7 @@ export default class AllPokemons extends Component {
   }
   async componentDidMount() {
     try {
-      const response = await fetch('https://projetpoca-production.up.railway.app');
+      const response = await fetch('https://projetpoca-production.up.railway.app/pokemons');
       const json = await response.json();
       this.setState({
         pokemons: json,

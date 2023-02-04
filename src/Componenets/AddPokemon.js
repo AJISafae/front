@@ -24,7 +24,7 @@ export default class AddPokemon extends Component{
 
 
            
-          fetch("http://localhost:3000/pokemons", 
+          fetch("https://projetpoca-production.up.railway.app/pokemons", 
           {  
             method: 'POST',
             headers: {
